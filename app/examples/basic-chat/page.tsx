@@ -7,13 +7,15 @@ import Chat from "../../components/chat";
 const Home = () => {
   return (
     <main className={styles.main}>
-      <div className={styles.container}
-            style={{
-        display: "flex",
-        flexDirection: "column",
-        justifyContent: "space-between",
-        alignItems: "center",
-      }}>
+      <div
+        className={styles.container}
+        style={{
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "space-between",
+          alignItems: "center",
+        }}
+      >
         <Chat />
       </div>
     </main>
