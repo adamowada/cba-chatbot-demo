@@ -5,6 +5,15 @@ import styles from "./page.module.css"; // use simple styles for demonstration p
 import Chat from "../../components/chat";
 
 const Home = () => {
+  function setVhUnit() {
+    let vh = window.innerHeight * 0.01;
+    document.documentElement.style.setProperty("--vh", `${vh}px`);
+  }
+
+  // Call the function initially and on resize
+  setVhUnit();
+  window.addEventListener("resize", setVhUnit);
+
   return (
     <main className={styles.main}>
       <div
